@@ -3,6 +3,7 @@
 namespace Anam\PhantomMagick;
 
 use Anam\PhantomMagick\Adapters\AmazonS3Adapter;
+use Anam\PhantomMagick\Adapters\CosAdapter;
 use Anam\PhantomMagick\Adapters\QiniuAdapter;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,7 +27,7 @@ class ConverterServiceProvider extends ServiceProvider
 		});
 
 		$this->app->alias(AmazonS3Adapter::class, AmazonS3Adapter::DRIVER);
-
 		$this->app->alias(QiniuAdapter::class, QiniuAdapter::DRIVER);
+		$this->app->alias(CosAdapter::class, CosAdapter::DRIVER);
 	}
 }
