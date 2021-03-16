@@ -33,7 +33,7 @@
 		"aws/aws-sdk-php": "^3.87",
 		"league/flysystem-aws-s3-v3": "^1.0",
 		"overtrue/flysystem-qiniu": "^1.0",
-		"freyo/flysystem-qcloud-cos-v5": "^2.2"
+		"freyo/flysystem-qcloud-cos-v5": "^2.1"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~6.0",
